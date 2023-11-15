@@ -2,6 +2,9 @@
 
 This GitHub repository serves as documentation for setting up a Windows Virtual Machine (VM) to emulate the functions of a Windows server within a production environment. The VM acts as a secure and dedicated repository for the company's database, replicating an on-premise system.
 
+The project unfolds through carefully planned milestones, each addressing crucial aspects of database migration, disaster recovery simulation, and data access control. Follow the step-by-step instructions to  transition from on-premise databases to Azure SQL, ensuring data integrity, security, and resilience.
+
+
 ## Project Milestones
 ### 1. Virtual Machine Setup
 Set up a Windows Virtual Machine as the cornerstone of the production environment.
