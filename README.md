@@ -4,10 +4,33 @@ This GitHub repository serves as documentation for setting up a Windows Virtual 
 
 The project unfolds through carefully planned milestones, each addressing crucial aspects of database migration, disaster recovery simulation, and data access control. Follow the step-by-step instructions to  transition from on-premise databases to Azure SQL, ensuring data integrity, security, and resilience.
 
+## Software Used
+
+This project leverages a combination of cloud-based services and tools to facilitate the setup, migration, and management of the Azure SQL Database. Below is a list of the key software and services used:
+
+**Azure Services:**
+- [Azure SQL Database](https://azure.microsoft.com/en-us/services/sql-database/): Hosts the production and development databases.
+- [Azure Blob Storage](https://azure.microsoft.com/en-us/services/storage/blobs/): Provides secure online storage for database backups.
+- [Azure Virtual Machines](https://azure.microsoft.com/en-us/services/virtual-machines/): Used for setting up Windows Virtual Machines to emulate the functions of a Windows server within a production environment.
+
+**Database Management Tools:**
+- [SQL Server Management Studio (SSMS)](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms): Utilized for managing SQL Server instances.
+- [Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio/download): Employed for database development, schema and data migration, and connection management.
+
+**Database Backup and Restore:**
+- Azure SQL Database Backup and Restore functionality.
+
+**Schema and Data Migration Extensions:**
+- [SQL Server Schema Compare extension](https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms): Used for schema migration within Azure Data Studio.
+- [Azure SQL Migration extension](https://docs.microsoft.com/en-us/sql/azure-data-studio/extensions/sql-server-schema-compare?view=sql-server-ver15): Facilitates smooth data transfer during migration.
+
+**Security and Access Control:**
+- [Microsoft Azure Active Directory](https://docs.microsoft.com/en-us/azure/active-directory/): Integrated for identity and access management.
+
 
 ## Project Milestones
 ### 1. Virtual Machine Setup
-Set up a Windows Virtual Machine as the cornerstone of the production environment.
+Set up a Windows Virtual Machine as the production environment.
 Configure network settings and firewall rules for secure operations.
 Establish connection to the VM using the RDP protocol for efficient management.
 
@@ -58,7 +81,7 @@ Configure a weekly backup schedule to ensure consistent protection for your evol
 ### 5. Disaster Recovery Simulation
 In this phase, we simulate a scenario where critical data is deliberately removed from the production database to replicate a situation where data integrity is compromised. The documentation of this simulated data loss will serve as a blueprint for our recovery testing.
 #### 5.1 Simulating Data Loss
-To simulate data loss, we deliberately dropped the "Employee" table from the "AdventureWorks2022" database. The SQL command used for this operation is as follows:
+To simulate data loss,  Tthe "Employee" table from the "AdventureWorks2022" database was deliberately dropped. The SQL command used for this operation is as follows:
 ```sql
 USE AdventureWorks2022;
 GO
